@@ -30,7 +30,7 @@ return `<div class="details">
 
 const getWeatherData = (cityName, lat, lon) => {
     //Change units=imperial to get fahrenheit instead of cel
-    const weather_forecast_api_url = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}&units=imperial`;
+    const weather_forecast_api_url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}&units=imperial`;
     //fetch forecast api url
     fetch(weather_forecast_api_url).then(res => res.json()).then(data => {
 
@@ -67,7 +67,7 @@ const getWeatherData = (cityName, lat, lon) => {
 const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();
     if (!cityName) return;
-    const geocodingApiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey}`;
+    const geocodingApiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey}`;
     //fetch geocoding api url
     fetch(geocodingApiUrl).then(res => res.json()).then(data => {
         if (!data.length) return alert(`No coordinates found for ${cityName}`);
