@@ -1,0 +1,138 @@
+/* ADD Google font */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif; 
+    color:#fff;
+}
+body{
+    background: rgb(41, 41, 41)
+}
+h1{
+    color: #fff;
+    padding: 16px 0;
+    
+    text-align: center;
+}
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+}
+.forecast-input{
+    width: 500px;
+    
+}
+.forecast-input input{
+    width: 100%;
+    height: 46px;
+    outline: none;
+    font-size: 1.20rem;
+    color: #181919;
+    margin: 10px 0 20px 0;
+    border-radius: 2px;
+    border: 2px solid #e7e7e7;
+    
+    
+
+}
+.forecast-input .divider{
+    height: 1px;
+    margin: 15px 0;
+    width: 100%;
+    background: #bbb;
+}
+.forecast-input .current-location-btn{
+    background: rgb(122, 122, 122)
+}
+.forecast-input button{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #2ac673;
+    font-size: 1rem;
+    color:#fff;
+}
+.forecast-data {
+    width: 100%;
+}
+.current-forecast {
+    background: rgb(23, 23, 23);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    }
+.forecast-data h4 {
+    margin-top: 20px;
+}
+.forecast-weather .weather-icon img {
+    max-width: 100px;
+    }
+.forecast-weather .weather-icon h3{
+    text-transform: capitalize;
+    margin-top: -15px;
+    padding-left: 20px;
+
+}
+.forecast h2{
+    font-size: 1.7rem;
+    margin: 20px 0;
+    
+}
+.forecast-cards{
+    display: flex;
+    gap: 23px;
+    padding-top: 10px;
+}
+.forecast-cards .cards{
+    background: rgb(23, 23, 23);
+    list-style: none;
+    padding: 17px 15px;
+    border-radius: 5px;
+}
+.forecast-cards .cards img{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+@media (max-width: 1400px){
+    .forecast-data .current-forecast{
+        padding:22px;
+    }
+    .forecast-cards{
+        flex-wrap: wrap;
+    }
+    .forecast-cards .cards {
+        width: calc(100%/4 - 15px);
+    }
+}
+@media (max-width: 1200px) {
+    .forecast-cards .cards{
+        width: calc(100% / 3 - 15px);
+    }
+}
+@media (max-width: 950px) {
+    .forecast-input{
+        width: 400px;
+    }
+    .forecast-cards .cards {
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 750px) {
+    .container {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .forecast-input {
+        width: 100%;
+    }
+}
