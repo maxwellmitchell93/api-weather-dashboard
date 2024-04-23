@@ -16,6 +16,4 @@ When the user opens the application they are directed to the dashboard where the
 
 [DeploymentLink](https://maxwellmitchell93.github.io/api-weather-dashboard/)
 
-## Credits
 
-CodingNepal Weather Dashboard Tutorial https://youtu.be/SeXg3AX82ig?si=Ww35b8sdhzvSZ7Xn
